@@ -1,0 +1,206 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+/*Header and navigation links*/
+header{
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, rgba(51, 34, 1, 0.5) 0%, rgba(241, 226, 193, 0.39) 100%), url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg") center no-repeat;
+}
+
+.nav-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1.2rem 1.3rem;
+}
+
+.page-name {
+    font-family: 'Lobster', cursive;
+    font-size: 3.5rem;
+    background: -webkit-linear-gradient(10deg, #eccf2b 0%, #ebe160 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.open-menu {
+    font-size: 3rem;
+    cursor: pointer;
+    color:  #eccf2b;
+    background: -webkit-linear-gradient(10deg, #eccf2b 0%, #ebe160 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.close-menu {
+    font-size: 3rem;
+    color: #f32a2a;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.nav-menu {
+    list-style: none;
+    width: 25rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    position: fixed;
+    right: -26rem;
+    top: 0;
+    background-color: #e9d8aafa;
+    z-index: 500;
+    transition: all 650ms ease-in-out;
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.89);
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    line-height: 6rem;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    background: -webkit-linear-gradient(10deg, #221f02 0%, #46453b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 850ms ease-in-out;
+}
+
+/*Main content*/
+main {
+    display: grid;
+}
+
+.art-item {
+    display: flex;
+    margin: 0rem 0rem;
+    padding: 1rem;
+    justify-content: space-around;
+}
+
+#brushes {
+    background-image: linear-gradient(170deg, rgba(239, 247, 240, 0.884) 0%, rgba(255, 255, 255, 0.884) 100%);
+    margin-top: 10rem;
+}
+
+#frames {
+    flex-direction: row-reverse;
+    background-image: linear-gradient(10deg,  rgba(248, 237, 244, 0.884)0%, rgba(255, 255, 255, 0.884) 100%);
+}
+
+#paints {
+    background-image: linear-gradient(170deg, rgba(241, 245, 253, 0.884) 0%, rgba(255, 255, 255, 0.884) 100%);
+}
+
+.item-img {
+    width: 22rem;
+    height: auto;
+}
+
+.item-description {
+    flex-basis: 3fr;
+    padding: 1rem 2rem;
+}
+
+.item-title {
+    font-family: 'Sriracha', cursive;
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin-top: 1.5rem;
+    color: rgb(24, 24, 24);
+}
+
+.price {
+    font-family: 'Sriracha', cursive;
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-top: .5rem;
+}
+
+.item-description p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+/*
+#header-banner {
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/pattern.jpeg);
+    text-align: center;
+    font-size: 100px;
+    color: Khaki;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h3 {
+    font-family: Helvetica;
+    font-size: 1.17em;
+    font-weight: bold;
+}
+
+#brush_price,
+#frame_price,
+#paint_price {
+    font-weight: bold;
+    color: Blue;
+}
+
+#brush-banner {
+    background-color: MediumSpringGreen;
+    color: white;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+#frames_banner {
+    background-color: lightcoral;
+    color: white;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+#paints_banner {
+    background-color: skyblue;
+    color: white;
+    font-size: 32px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+*/
